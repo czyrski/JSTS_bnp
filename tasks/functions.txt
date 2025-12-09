@@ -1,0 +1,29 @@
+Stwórz dwie funkcje, które pomogą symulować proste operacje matematyczne często używane w testach do walidacji danych (np. obliczanie różnicy, czy sumy).
+
+1. Funkcja Klasyczna: Zadeklaruj klasyczną funkcję o nazwie calculateDifference.
+
+    - Musi przyjmować dwa parametry: actualValue i expectedValue (oba typu number).
+
+    - Musi zwracać typ number.
+
+    - Zwracać różnicę między wartościami: actualValue - expectedValue.
+
+2. Funkcja Strzałkowa: Zadeklaruj funkcję strzałkową o nazwie checkIfNegative.
+
+    - Musi przyjmować jeden parametr: result (typu number).
+
+    - Musi zwracać typ boolean.
+
+    - Użyj skróconej składni (implicit return) do zwrócenia true, jeśli result jest mniejsze niż 0, w przeciwnym razie false.
+
+Następnie, użyj obu funkcji i instrukcji warunkowej do wyświetlenia wyniku.
+
+Kroki do Wykonania:
+
+1. Zdefiniuj stałe dla testowanych wartości: ACTUAL (15) i EXPECTED (10).
+
+2. Wywołaj calculateDifference i przypisz wynik do zmiennej diff.
+
+3. Wywołaj checkIfNegative z użyciem diff i przypisz wynik do zmiennej isNegative.
+
+4. Wypisz w konsoli, czy test "przeszedł" czy "nie przeszedł", zakładając, że test przechodzi, jeśli różnica nie jest ujemna.

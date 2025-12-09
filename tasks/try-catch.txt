@@ -1,0 +1,19 @@
+1. Zdefiniuj stałą TARGET_SELECTOR (np. "#missing-btn").
+
+2. Zaimplementuj i wywołaj try...catch dla kodu, który może się nie udać.
+
+3. W bloku try, wywołaj funkcję simulateClick(TARGET_SELECTOR).
+
+4. W bloku catch, przechwyć błąd i wypisz jego komunikat, np.: "Caught an error: [komunikat błędu]".
+
+5. Użyj bloku finally, aby wypisać komunikat "Action finished. Continuing test execution."
+
+
+
+// Helper function to simulate a browser action that might fail (Must be provided by instructor)
+function simulateClick(selector: string): void {
+    if (selector === "#missing-btn") {
+        throw new Error(`Element with selector ${selector} was not found.`);
+    }
+    console.log(`Element clicked successfully: ${selector}`);
+}

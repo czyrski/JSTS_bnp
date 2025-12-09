@@ -1,0 +1,17 @@
+INSTRUKCJA:
+
+Zdefiniuj trzy zmienne: USERNAME, PASSWORD (oba typu string) oraz RESULT_MESSAGE (zainicjuj pustym ciągiem znaków).
+
+1. Użyj zmiennych USERNAME i PASSWORD do testowania (np. ustawiając je na "testuser" i "securepass").
+
+2. Napisz instrukcję if...else if...else do sprawdzenia warunków i przypisania odpowiedniego komunikatu do zmiennej RESULT_MESSAGE.
+
+3. Warunki:
+
+- Jeśli USERNAME jest pusty LUB PASSWORD jest pusty, przypisz do RESULT_MESSAGE: "Error: Both fields are required.". Użyj operatora logicznego OR (||).
+
+- Jeśli USERNAME jest równy "admin" ORAZ PASSWORD jest równy "12345", przypisz: "Login successful. Redirecting...". Użyj operatora logicznego AND (&&).
+
+- W każdym innym przypadku przypisz: "Error: Invalid credentials.".
+
+4. Wypisz ostateczną wartość RESULT_MESSAGE w konsoli.

@@ -1,0 +1,21 @@
+Celem zadania jest wymuszenie użycia Interfejsu do stworzenia kontraktu dla obiektu konfiguracji, który określa, jakiego typu dane są wymagane przez daną część testu.
+
+1. Stwórz Interfejs: Zdefiniuj interfejs o nazwie TestConfig, który musi zawierać następujące właściwości, typowe dla konfiguracji środowiska testowego:
+
+    - baseUrl: typu string (wymagany)
+
+    - timeoutMs: typu number (wymagany)
+
+    - headlessMode: typu boolean (wymagany)
+
+    - apiKey: typu string (opcjonalny, użyj ?)
+
+2. Stwórz Obiekt Konfiguracji: Zadeklaruj stałą o nazwie prodConfig i przypisz jej typ TestConfig. Przypisz jej wartości, pamiętając, że nie musisz podawać wartości dla opcjonalnego apiKey.
+
+3. Wypisz do konsoli kluczowe wartości dla weryfikacji: baseUrl i timeout. Użyj ` (backtick) by osadzić zmienną w stringu za pomocą składni ${}
+
+4. Weryfikacja Logiki (Warunki): Użyj instrukcji warunkowej if/else do sprawdzenia logiki:
+
+    - Jeśli prodConfig.headlessMode jest ustawiony na true ORAZ prodConfig.timeoutMs jest większy niż 5000, wypisz: "Running long-headless test: Configuration is valid.".
+
+    - W przeciwnym razie wypisz: "Running quick test: Configuration is valid.".
