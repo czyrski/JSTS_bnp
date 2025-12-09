@@ -1,0 +1,5 @@
+Zdefiniuj klasę o nazwie Lamp. Będzie miała atrybut typu string o nazwie color oraz atrybut typu boolean o nazwie on, który będzie określał, czy lampa jest włączona. Zdefiniuj konstruktor klasy z parametrem color i ustaw wartość on na false podczas inicjalizacji.
+
+Nadaj lampie metodę instancyjną o nazwie toggle_switch, która będzie przełączała wartość atrybutu on.
+
+Zdefiniuj także inną metodę instancyjną o nazwie state, która zwróci "The lamp is on." jeśli lampa jest włączona, a "The lamp is off." w przeciwnym razie.
